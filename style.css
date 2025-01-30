@@ -1,0 +1,440 @@
+/* About Section */
+#about {
+    background: #1e1e1e;
+    padding: 80px 10%;
+    color: white;
+    text-align:center;
+}
+
+#about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #ffcc00;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+.about-text {
+    max-width: 1500px;
+    
+}
+
+.about-text p {
+    font-size: 25px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.about-text h3 {
+    font-size: 30px;
+    color: #ff5733;
+    margin-top: 15px;
+}
+
+.about-text ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about-text ul li {
+    font-size: 20px;
+    margin: 5px 0;
+}
+
+/* Skills Styling */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    
+    gap: 10px;
+    padding: 0;
+    justify-content: center;
+}
+
+.skills li {
+    background: #ff5733;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    
+    justify-content: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-content img {
+        margin-bottom: 20px;
+    }
+
+    .about-text {
+        text-align: center;
+    }
+}
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Solid Background Color */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #121212;
+    color: white;
+    text-align: center;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: #1e1e1e;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* Hero Section */
+.hero {
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    flex-direction: column;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero h1 {
+    font-size: 50px;
+    font-weight: bold;
+    margin: 0;
+    color: white;
+}
+
+/* Animated Name */
+.name {
+    color: #ffcc00;
+}
+
+/* Typing Effect */
+#changing-text {
+    font-weight: bold;
+    font-size: 24px;
+    color: #ff5733;
+}
+
+/* Cursor Animation */
+.cursor {
+    font-weight: bold;
+    font-size: 24px;
+    color: #ff5733;
+    animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
+
+/* CTA Button */
+.cta-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: #ff5733;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+}
+
+.cta-btn:hover {
+    background: #ffcc00;
+    transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 36px;
+    }
+}
+/* Projects Section */
+#projects {
+    background: #d0c7cd;
+    padding: 80px 10%;
+    text-align: center;
+}
+
+#projects h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project-card {
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    width: 280px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.project-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.project-info {
+    padding: 15px;
+}
+
+.project-info h3 {
+    color: #194231;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.project-info p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.github-btn {
+    background: #000;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background 0.3s ease;
+}
+
+.github-btn:hover {
+    background: #ff5733;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .projects-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Certifications Section */
+#certifications {
+    background: #c0cdcc;
+    padding: 80px 10%;
+    text-align: center;
+}
+
+#certifications h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.certifications-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.certification-card {
+    background: #b9afaf;
+    border-radius: 15px;
+    overflow: hidden;
+    width: 280px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.certification-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.certification-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.certification-info {
+    padding: 15px;
+}
+
+.certification-info h3 {
+    color: #1e1e1e;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.certification-info p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.cert-btn {
+    background: #000;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background 0.3s ease;
+}
+
+.cert-btn:hover {
+    background: #ff5733;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .certifications-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+#contact {
+    background-color: #241f1f;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    display: block;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin-left: 35%;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
